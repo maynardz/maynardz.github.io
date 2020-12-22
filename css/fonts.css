@@ -27,3 +27,13 @@
     font-family: qualy;
     src: url('../assets/fonts/qualy.ttf');
 }
+
+@font-face {
+    font-family: cubic;
+    src: url('../assets/fonts/cubic.ttf');
+}
+
+@font-face {
+    font-family: orbiter;
+    src: url('../assets/fonts/earthorbiter.ttf');
+}

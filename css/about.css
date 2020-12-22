@@ -1,0 +1,38 @@
+#nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 1s;
+    z-index: -1;
+    overflow: hidden;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #d6d6d6;
+}
+
+#nav .dropdown {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    font-size: 3em;
+    text-align: center;
+    width: 100vw;
+    font-family: orbiter;
+}
+
+.visible {
+    z-index: 100 !important;
+    opacity: 1 !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown h3 {
+    /* color: white; */
+}
