@@ -1,6 +1,28 @@
 /* CONTAINER */
 
-.landingContainer {
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: akira;
+    height: 100vh;
+    box-sizing: border-box;
+    letter-spacing: 6px;
+    margin: 0;
+    line-height: 1.2;
+    background-color: #222;
+    color: #fff;
+    font-weight: 400;;
+    font-size: 2.5rem;
+}
+
+span {
+    display: inline-block;
+}
+
+/* .landingContainer {
     background: #222;
     min-height: 100vh;
     display: grid;
@@ -8,20 +30,19 @@
     padding: 0;
     grid-template-columns: 100vw;
     grid-template-rows: auto 75px 75px auto 50px 20px;
-    /* row-gap: 100px; */
     color: whitesmoke;
     font-family: abnes;
     text-align: center;
-}
+} */
 
 /* GLITCH */
 
-.glitch {
+/* .glitch {
     font-size: 5.5rem;
     font-weight: 200;
     position: relative;
     margin: 0;
-    text-shadow: /*    x    y blur */
+    text-shadow: 
     0.05em 0 0 rgba(255, 0, 0, .75), -0.025em -0.05em 0 rgba(0, 255, 0, .75), 0.025em 0.05em 0 rgba(0, 0, 255, .75);
     grid-row: 2;
 
@@ -46,11 +67,11 @@
     clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
     transform: translate(.0125em, 0.025em);
     opacity: 0.8;
-}
+} */
 
 /* SUBTEXT */
 
-#subtext {
+/* #subtext {
     font-size: 1.8rem;
     text-transform: uppercase;
     position: relative;
@@ -76,11 +97,11 @@
     clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
     transform: translate(.0125em, 0.025em);
     opacity: 0.8;
-}
+} */
 
 /* ICON */
 
-.icon {
+/* .icon {
     grid-row: 5;
     font-size: 25px;
 }
@@ -88,11 +109,11 @@
 .animate__animated.animate__pulse {
     --animate-delay: 2s;
     -animate-duration: 3s;
-}
+} */
 
 /* ANIMATIONS */
 
-@keyframes glitch {
+/* @keyframes glitch {
     0% {
         text-shadow: 0.05em 0 0 rgba(0, 204, 255, 0.75),
         -0.05em -0.025em 0 rgba(14, 10, 238, 0.75),
@@ -155,18 +176,18 @@
     #subtext {
         font-size: 0.8rem;
     }
-  }
+  } */
 
 /* DISABLED ANIMATIONS SYSTEM PREF */
 
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
-      animation-delay: -1ms !important;
-      animation-duration: 1ms !important;
-      animation-iteration-count: 1 !important;
-      background-attachment: initial !important;
-      scroll-behavior: auto !important;
-      transition-duration: 0s !important;
-      transition-delay: 0s !important;
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
     }
-  }
+}
