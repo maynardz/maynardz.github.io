@@ -9,6 +9,9 @@
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/40176556d2.js" crossorigin="anonymous"></script>
 
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <!-- LOCAL CSS -->
     <link ref="text/css" rel="stylesheet" href="./css/main.css">
 </head>
@@ -28,17 +31,25 @@
                 Web Developer
             </p>
             <div class="icon">
-                <i class="fas fa-angle-down"></i>
+                    <i class="animate__animated animate__pulse fas fa-angle-down"></i>
             </div>
         </div>
     </section>
 
     <section id="select">
         <div class="selectContainer">
-            <div class="from-left slide-in">about</div>
-            <div class="from-right slide-in">portfolio</div>
-            <div class="from-left slide-in">photography</div>
-            <div class="from-right slide-in">graphics</div>
+            <div class="from-left slide-in" id="about">
+                <h2>About</h2>
+            </div>
+            <div class="from-right slide-in" id="code">
+                <h2>Code</h2>
+            </div>
+            <div class="from-left slide-in" id="graphic_design">
+                <h2>Graphic Design</h2>
+            </div>
+            <div class="from-right slide-in" id="photography">
+                <h2>Photography</h2>
+            </div>
         </div>
     </section>
 

@@ -15,7 +15,47 @@
 .selectContainer div {
     height: 325px;
     /* match height of grid-template-rows - otherwise padding */
-    background: whitesmoke;
+    /* background: whitesmoke; */
+}
+
+.selectContainer div:hover {
+    background-color: #fafafa;
+    opacity: 0.5;
+}
+
+.selectContainer div h2 {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: abnes;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+#about {
+    background-image: url(../assets/images/floor.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#code {
+    background-image: url(../assets/images/window.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#graphic_design {
+    background-image: url(../assets/images/light.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+#photography {
+    background-image: url(../assets/images/red.jpg);
+    background-size: cover;
+    background-position: top;
 }
 
 .from-left {
@@ -58,3 +98,22 @@
 .slide-in.appear {
     opacity: 1;
 } */
+
+@media only screen and (max-width: 500px) {
+    #about h2 {
+        font-size: 2rem;
+        top: 50%;
+    }
+    #code h2 {
+        font-size: 2rem;
+        top: 50%;
+    }
+    #graphic_design h2 {
+        font-size: 1.4rem;
+        top: 50%;
+    }
+    #photography h2 {
+        font-size: 1.3rem;
+        top: 50%;
+    }
+}

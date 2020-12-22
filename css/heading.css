@@ -7,7 +7,7 @@
     place-items: center;
     padding: 0;
     grid-template-columns: 100vw;
-    grid-template-rows: 375px 50px 50px;
+    grid-template-rows: auto 75px 75px auto 50px 20px;
     /* row-gap: 100px; */
     color: whitesmoke;
     font-family: abnes;
@@ -81,8 +81,13 @@
 /* ICON */
 
 .icon {
-    grid-row: 4;
+    grid-row: 5;
     font-size: 25px;
+}
+
+.animate__animated.animate__pulse {
+    --animate-delay: 2s;
+    -animate-duration: 3s;
 }
 
 /* ANIMATIONS */
