@@ -38,6 +38,7 @@
 }
 
 /* NAVBAR BARS */
+
 .bars {
     position: absolute;
     width: 27px;
@@ -49,8 +50,7 @@
     padding-top: 9px;
 }
 
-.bars::before,
-.bars::after {
+.bars::before, .bars::after {
     content: "";
     display: block;
     background-color: grey;
@@ -73,7 +73,6 @@
     50% {
         transform: translateY(0);
     }
-
     100% {
         transform: rotate(45deg) translateY(0);
     }
@@ -83,8 +82,16 @@
     50% {
         transform: translateY(0);
     }
-
     100% {
         transform: rotate(-45deg) translateY(0);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .left {
+        display: none;
+    }
+    .right {
+        display: none;
     }
 }
