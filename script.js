@@ -1,32 +1,31 @@
 // SLIDE/FADE IN ON SCROLL
 
-const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll('.slide-in');
+// const faders = document.querySelectorAll('.fade-in');
+// const sliders = document.querySelectorAll('.slide-in');
 
-const appearOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -250px 0px",
-};
+// const appearOptions = {
+//     threshold: 0,
+//     rootMargin: "0px 0px -250px 0px",
+// };
 
-const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
-        }
-    })
-}, appearOptions);
+// const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             return;
+//         } else {
+//             entry.target.classList.add('appear');
+//             appearOnScroll.unobserve(entry.target);
+//         }
+//     })
+// }, appearOptions);
 
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-})
+// faders.forEach(fader => {
+//     appearOnScroll.observe(fader);
+// })
 
-sliders.forEach(slider => {
-    appearOnScroll.observe(slider);
-})
-
+// sliders.forEach(slider => {
+//     appearOnScroll.observe(slider);
+// })
 
 // lETTERIZE
 let test = new Letterize({
@@ -54,7 +53,7 @@ animation.add({
     .add({
         letterSpacing: "6px"
     });
-    
+
 // WAVE
 const wave1 = "M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V108.306Z",
     wave2 = "M0 250L50 244.048C100 238.095 200 226.19 300 226.19C400 226.19 500 238.095 600 232.143C700 226.19 800 202.381 900 196.429C1000 190.476 1100 202.381 1150 208.333L1200 214.286V0H1150C1100 0 1000 0 900 0C800 0 700 0 600 0C500 0 400 0 300 0C200 0 100 0 50 0H0V250Z",
@@ -76,35 +75,22 @@ anime({
 
 // ABOUT
 const aboutAction = document.getElementById('about-action');
-const about = document.querySelector('nav');
+const about = document.getElementById('about');
+const bars = document.getElementById("nav-action");
+
 
 aboutAction.addEventListener('click', aboutClicked, false);
 
 function aboutClicked() {
+    bars.style.display = 'block';
     aboutAction.classList.toggle('active');
     about.classList.toggle('visible');
-  }
-
-$(function () {
-    $('[data-toggle="popover"]').popover()
-})
-
-actualWidth = $tip[0].offsetWidth
-actualHeight = $tip[0].offsetHeight
-
-switch (placement) {
-    case 'bottom':
-        tp = { top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2 }
-        break
-    case 'top':
-        tp = { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 }
-        break
-    case 'left':
-        tp = { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth }
-        break
-    case 'right':
-        tp = { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width }
-        break
+    bars.classList.toggle('active');
 }
 
-this.applyPlacement(tp, placement)
+bars.addEventListener('click', () => {
+    bars.style.display = 'none';
+    aboutAction.classList.toggle('active');
+    about.classList.toggle('visible');
+    bars.classList.toggle('active');
+})
