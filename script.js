@@ -33,9 +33,9 @@ let test = new Letterize({
 });
 
 let animation = anime.timeline({
-    targets: test.listAll(),
+    targets: test.listAll,
     delay: anime.stagger(100, {
-        grid: [test.list()[0].length, test.list().length],
+        grid: [test.list[0].length, test.list.length],
         from: "center"
     }),
     loop: true
@@ -94,3 +94,54 @@ bars.addEventListener('click', () => {
     about.classList.toggle('visible');
     bars.classList.toggle('active');
 })
+
+
+
+
+
+
+
+
+
+let resource = '|========|';
+
+function industrialMachine(ironRod) { 
+    // console.log(ironRod);
+    let screws;
+
+    if(ironRod){
+        screws = '|----    |----    |----    |----'; 
+    } else {
+        console.log('not fed any resources');
+    }
+
+    return screws; 
+}
+
+let powerOn = industrialMachine(resource); 
+console.log(powerOn);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
